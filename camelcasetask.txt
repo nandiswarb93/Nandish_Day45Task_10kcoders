@@ -1,0 +1,78 @@
+using string methods :
+
+using substr() method:
+
+
+var n = "ch_ai_ta_ny_a";
+
+function camelcase(n){
+var a=n.split("_");
+var temp = "";
+for (var i of a)
+{  
+    var x = i.substr(0,1).toUpperCase() + i.substr(1);
+    temp = temp+x;
+}
+return temp;
+}
+console.log(camelcase(n));
+
+o/p:
+ChAiTaNyA
+
+using slice :
+
+var n = "ch_ai_ta_ny_a";
+
+function camelcase(n){
+var a=n.split("_");
+var temp = "";
+for (var i of a)
+{  
+    var x = i.slice(0,1).toUpperCase() + i.slice(1);
+    temp = temp+x;
+}
+return temp;
+}
+console.log(camelcase(n));
+
+o/p:
+
+ChAiTaNyA
+
+using substring() method :
+
+var n = "ch_ai_ta_ny_a";
+
+function camelcase(n){
+var a=n.split("_");
+var temp = "";
+for (var i of a)
+{  
+    var x = i.substring(0,1).toUpperCase() + i.substring(1);
+    temp = temp+x;
+}
+return temp;
+}
+console.log(camelcase(n));
+
+o/p:
+ChAiTaNyA
+
+
+
+2. the sum of n natural numbers :
+
+n=100;
+function sum_natural(n)
+{
+  return (n * (n+1))/2;
+}
+console.log(sum_natural(n));
+
+o/p:
+
+5050
+
+
+
